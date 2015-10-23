@@ -40,8 +40,8 @@ Xcode运行蹦在一出，但不会有错误提示，即便错误很明显，原
 会报错！提示，self.tableView未指定superView
 
 错误原因不再AutoLayout
-而是在于@property (weak, nonatomic)UITableView *tableView;的weak
-然后的懒加载就会失去效果！
+而是在于 " @property (weak, nonatomic)UITableView *tableView; " ----->   中的weak
+此时懒加载就会失去效果！
 
-
+本该不出现的问题，因为长时间没用纯代码，被忘掉了
 引以为戒！
